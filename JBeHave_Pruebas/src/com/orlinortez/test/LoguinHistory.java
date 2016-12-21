@@ -36,7 +36,7 @@ import static org.jbehave.web.selenium.WebDriverHtmlOutput.WEB_DRIVER_HTML;
 //@RunWith(JBehave.class)
 public class LoguinHistory extends JUnitStory {
 
-	/*@Override
+	@Override
 	public List candidateSteps() {
 		InstanceStepsFactory stepsFactory = new InstanceStepsFactory(
 				configuration(), new TestSteps());
@@ -70,9 +70,9 @@ public class LoguinHistory extends JUnitStory {
 				.useStoryReporterBuilder(reporterBuilder);
 		useConfiguration(configuration);
 		return configuration;
-	}*/
+	}
 	
-	@Override
+	/*@Override
 	public Configuration configuration() {
 		return new MostUsefulConfiguration()
 		// where to find the stories
@@ -89,5 +89,5 @@ public class LoguinHistory extends JUnitStory {
 		// varargs, can have more that one steps classes
 		return new InstanceStepsFactory(configuration(), new TestSteps())
 				.createCandidateSteps();
-	}
+	}*/
 }
