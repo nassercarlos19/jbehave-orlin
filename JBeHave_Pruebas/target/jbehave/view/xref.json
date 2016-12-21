@@ -1,0 +1,797 @@
+{"xref": {
+  "stories": [
+    {
+      "story": {
+        "path": "com/orlinortez/test/loguin_history.story",
+        "description": {
+          "descriptionAsString": ""
+        },
+        "narrative": {
+          "inOrderTo": "",
+          "asA": "",
+          "iWantTo": "",
+          "soThat": ""
+        },
+        "meta": {
+          "properties": []
+        },
+        "givenStories": {
+          "givenStories": [],
+          "givenStoriesAsString": "",
+          "examplesTable": {
+            "tableAsString": "",
+            "headerSeparator": "|",
+            "valueSeparator": "|",
+            "ignorableSeparator": "|--",
+            "tableTransformers": {
+              "transformers": [
+                [
+                  "FORMATTING",
+                  {}
+                ],
+                [
+                  "REPLACING",
+                  {}
+                ],
+                [
+                  "FROM_LANDSCAPE",
+                  {}
+                ]
+              ]
+            },
+            "headers": [],
+            "data": [],
+            "properties": [
+              {
+                "@name": "headerSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "valueSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "ignorableSeparator",
+                "@value": "|--"
+              }
+            ],
+            "propertiesAsString": "",
+            "namedParameters": [],
+            "trim": true
+          }
+        },
+        "lifecycle": {
+          "before": {
+            "steps": [
+              []
+            ]
+          },
+          "after": []
+        },
+        "scenarios": [
+          {
+            "title": "Login with a valid credentials",
+            "meta": {
+              "properties": []
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [],
+              "data": [],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            },
+            "steps": [
+              "Given I go to \"http://104.197.75.20/usuarios/login\"",
+              "When I enter username as \"usuario\" and password \"usuario\"",
+              "And I press Login",
+              "Then I should go to \"http://104.197.75.20/usuarios/home\"",
+              "Then I go to \"http://104.197.75.20/usuarios/login\"",
+              "When I enter username as \"Orlin\" and password \"Orlin\"",
+              "And I press Login",
+              "Then I should go to \"http://104.197.75.20/usuarios/loginAction\""
+            ]
+          }
+        ],
+        "name": "loguin_history.story"
+      },
+      "localizedNarrative": "As a \nI want to \nSo that ",
+      "allowed": true,
+      "status": "SUCCESSFUL",
+      "givenStories": [],
+      "scenarios": [
+        {
+          "scenario": {
+            "title": "Login with a valid credentials",
+            "meta": {
+              "properties": []
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [],
+              "data": [],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            },
+            "steps": [
+              "Given I go to \"http://104.197.75.20/usuarios/login\"",
+              "When I enter username as \"usuario\" and password \"usuario\"",
+              "And I press Login",
+              "Then I should go to \"http://104.197.75.20/usuarios/home\"",
+              "Then I go to \"http://104.197.75.20/usuarios/login\"",
+              "When I enter username as \"Orlin\" and password \"Orlin\"",
+              "And I press Login",
+              "Then I should go to \"http://104.197.75.20/usuarios/loginAction\""
+            ]
+          },
+          "storyPath": "com/orlinortez/test/loguin_history.story",
+          "allowed": true,
+          "normalPerformableScenario": {
+            "parameters": [],
+            "givenStories": [],
+            "beforeSteps": {
+              "matches": []
+            },
+            "steps": {
+              "matches": [
+                {
+                  "type": "THEN",
+                  "annotatedPattern": "I go to \"$url\"",
+                  "resolvedPattern": "I\\s+go\\s+to\\s+\"(.*)\""
+                },
+                {
+                  "type": "GIVEN",
+                  "annotatedPattern": "I go to \"$url\"",
+                  "resolvedPattern": "I\\s+go\\s+to\\s+\"(.*)\""
+                },
+                {
+                  "type": "WHEN",
+                  "annotatedPattern": "I press Login",
+                  "resolvedPattern": "I\\s+press\\s+Login"
+                },
+                {
+                  "type": "THEN",
+                  "annotatedPattern": "I should go to \"$ur\"",
+                  "resolvedPattern": "I\\s+should\\s+go\\s+to\\s+\"(.*)\""
+                },
+                {
+                  "type": "WHEN",
+                  "annotatedPattern": "I enter username as \"$strArg1\" and password \"$strArg2\"",
+                  "resolvedPattern": "I\\s+enter\\s+username\\s+as\\s+\"(.*)\"\\s+and\\s+password\\s+\"(.*)\""
+                }
+              ],
+              "results": [
+                {
+                  "step": "Given I go to \"http://104.197.75.20/usuarios/login\"",
+                  "type": "SUCCESSFUL",
+                  "parametrisedStep": "Given I go to \"http://104.197.75.20/usuarios/login\"",
+                  "durationInMillis": 4473
+                },
+                {
+                  "step": "When I enter username as \"usuario\" and password \"usuario\"",
+                  "type": "SUCCESSFUL",
+                  "parametrisedStep": "When I enter username as \"usuario\" and password \"usuario\"",
+                  "durationInMillis": 120
+                },
+                {
+                  "step": "And I press Login",
+                  "type": "SUCCESSFUL",
+                  "parametrisedStep": "And I press Login",
+                  "durationInMillis": 658
+                },
+                {
+                  "step": "Then I should go to \"http://104.197.75.20/usuarios/home\"",
+                  "type": "SUCCESSFUL",
+                  "parametrisedStep": "Then I should go to \"http://104.197.75.20/usuarios/home\"",
+                  "durationInMillis": 11
+                },
+                {
+                  "step": "Then I go to \"http://104.197.75.20/usuarios/login\"",
+                  "type": "SUCCESSFUL",
+                  "parametrisedStep": "Then I go to \"http://104.197.75.20/usuarios/login\"",
+                  "durationInMillis": 3844
+                },
+                {
+                  "step": "When I enter username as \"Orlin\" and password \"Orlin\"",
+                  "type": "SUCCESSFUL",
+                  "parametrisedStep": "When I enter username as \"Orlin\" and password \"Orlin\"",
+                  "durationInMillis": 131
+                },
+                {
+                  "step": "And I press Login",
+                  "type": "SUCCESSFUL",
+                  "parametrisedStep": "And I press Login",
+                  "durationInMillis": 654
+                },
+                {
+                  "step": "Then I should go to \"http://104.197.75.20/usuarios/loginAction\"",
+                  "type": "SUCCESSFUL",
+                  "parametrisedStep": "Then I should go to \"http://104.197.75.20/usuarios/loginAction\"",
+                  "durationInMillis": 9
+                }
+              ]
+            },
+            "afterSteps": {
+              "matches": []
+            },
+            "storyAndScenarioMeta": {
+              "properties": []
+            },
+            "scenario": {
+              "title": "Login with a valid credentials",
+              "meta": {
+                "properties": []
+              },
+              "givenStories": {
+                "givenStories": [],
+                "givenStoriesAsString": "",
+                "examplesTable": {
+                  "tableAsString": "",
+                  "headerSeparator": "|",
+                  "valueSeparator": "|",
+                  "ignorableSeparator": "|--",
+                  "tableTransformers": {
+                    "transformers": [
+                      [
+                        "FORMATTING",
+                        {}
+                      ],
+                      [
+                        "REPLACING",
+                        {}
+                      ],
+                      [
+                        "FROM_LANDSCAPE",
+                        {}
+                      ]
+                    ]
+                  },
+                  "headers": [],
+                  "data": [],
+                  "properties": [
+                    {
+                      "@name": "headerSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "valueSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "ignorableSeparator",
+                      "@value": "|--"
+                    }
+                  ],
+                  "propertiesAsString": "",
+                  "namedParameters": [],
+                  "trim": true
+                }
+              },
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              },
+              "steps": [
+                "Given I go to \"http://104.197.75.20/usuarios/login\"",
+                "When I enter username as \"usuario\" and password \"usuario\"",
+                "And I press Login",
+                "Then I should go to \"http://104.197.75.20/usuarios/home\"",
+                "Then I go to \"http://104.197.75.20/usuarios/login\"",
+                "When I enter username as \"Orlin\" and password \"Orlin\"",
+                "And I press Login",
+                "Then I should go to \"http://104.197.75.20/usuarios/loginAction\""
+              ]
+            }
+          },
+          "examplePerformableScenarios": [],
+          "status": "SUCCESSFUL"
+        }
+      ],
+      "beforeSteps": {},
+      "afterSteps": {},
+      "timing": {
+        "durationInMillis": 9901
+      },
+      "givenStory": false
+    }
+  ],
+  "scenarios": [
+    {
+      "scenario": {
+        "title": "Login with a valid credentials",
+        "meta": {
+          "properties": []
+        },
+        "givenStories": {
+          "givenStories": [],
+          "givenStoriesAsString": "",
+          "examplesTable": {
+            "tableAsString": "",
+            "headerSeparator": "|",
+            "valueSeparator": "|",
+            "ignorableSeparator": "|--",
+            "tableTransformers": {
+              "transformers": [
+                [
+                  "FORMATTING",
+                  {}
+                ],
+                [
+                  "REPLACING",
+                  {}
+                ],
+                [
+                  "FROM_LANDSCAPE",
+                  {}
+                ]
+              ]
+            },
+            "headers": [],
+            "data": [],
+            "properties": [
+              {
+                "@name": "headerSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "valueSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "ignorableSeparator",
+                "@value": "|--"
+              }
+            ],
+            "propertiesAsString": "",
+            "namedParameters": [],
+            "trim": true
+          }
+        },
+        "examplesTable": {
+          "tableAsString": "",
+          "headerSeparator": "|",
+          "valueSeparator": "|",
+          "ignorableSeparator": "|--",
+          "tableTransformers": {
+            "transformers": [
+              [
+                "FORMATTING",
+                {}
+              ],
+              [
+                "REPLACING",
+                {}
+              ],
+              [
+                "FROM_LANDSCAPE",
+                {}
+              ]
+            ]
+          },
+          "headers": [],
+          "data": [],
+          "properties": [
+            {
+              "@name": "headerSeparator",
+              "@value": "|"
+            },
+            {
+              "@name": "valueSeparator",
+              "@value": "|"
+            },
+            {
+              "@name": "ignorableSeparator",
+              "@value": "|--"
+            }
+          ],
+          "propertiesAsString": "",
+          "namedParameters": [],
+          "trim": true
+        },
+        "steps": [
+          "Given I go to \"http://104.197.75.20/usuarios/login\"",
+          "When I enter username as \"usuario\" and password \"usuario\"",
+          "And I press Login",
+          "Then I should go to \"http://104.197.75.20/usuarios/home\"",
+          "Then I go to \"http://104.197.75.20/usuarios/login\"",
+          "When I enter username as \"Orlin\" and password \"Orlin\"",
+          "And I press Login",
+          "Then I should go to \"http://104.197.75.20/usuarios/loginAction\""
+        ]
+      },
+      "storyPath": "com/orlinortez/test/loguin_history.story",
+      "allowed": true,
+      "normalPerformableScenario": {
+        "parameters": [],
+        "givenStories": [],
+        "beforeSteps": {
+          "matches": []
+        },
+        "steps": {
+          "matches": [
+            {
+              "type": "THEN",
+              "annotatedPattern": "I go to \"$url\"",
+              "resolvedPattern": "I\\s+go\\s+to\\s+\"(.*)\""
+            },
+            {
+              "type": "GIVEN",
+              "annotatedPattern": "I go to \"$url\"",
+              "resolvedPattern": "I\\s+go\\s+to\\s+\"(.*)\""
+            },
+            {
+              "type": "WHEN",
+              "annotatedPattern": "I press Login",
+              "resolvedPattern": "I\\s+press\\s+Login"
+            },
+            {
+              "type": "THEN",
+              "annotatedPattern": "I should go to \"$ur\"",
+              "resolvedPattern": "I\\s+should\\s+go\\s+to\\s+\"(.*)\""
+            },
+            {
+              "type": "WHEN",
+              "annotatedPattern": "I enter username as \"$strArg1\" and password \"$strArg2\"",
+              "resolvedPattern": "I\\s+enter\\s+username\\s+as\\s+\"(.*)\"\\s+and\\s+password\\s+\"(.*)\""
+            }
+          ],
+          "results": [
+            {
+              "step": "Given I go to \"http://104.197.75.20/usuarios/login\"",
+              "type": "SUCCESSFUL",
+              "parametrisedStep": "Given I go to \"http://104.197.75.20/usuarios/login\"",
+              "durationInMillis": 4473
+            },
+            {
+              "step": "When I enter username as \"usuario\" and password \"usuario\"",
+              "type": "SUCCESSFUL",
+              "parametrisedStep": "When I enter username as \"usuario\" and password \"usuario\"",
+              "durationInMillis": 120
+            },
+            {
+              "step": "And I press Login",
+              "type": "SUCCESSFUL",
+              "parametrisedStep": "And I press Login",
+              "durationInMillis": 658
+            },
+            {
+              "step": "Then I should go to \"http://104.197.75.20/usuarios/home\"",
+              "type": "SUCCESSFUL",
+              "parametrisedStep": "Then I should go to \"http://104.197.75.20/usuarios/home\"",
+              "durationInMillis": 11
+            },
+            {
+              "step": "Then I go to \"http://104.197.75.20/usuarios/login\"",
+              "type": "SUCCESSFUL",
+              "parametrisedStep": "Then I go to \"http://104.197.75.20/usuarios/login\"",
+              "durationInMillis": 3844
+            },
+            {
+              "step": "When I enter username as \"Orlin\" and password \"Orlin\"",
+              "type": "SUCCESSFUL",
+              "parametrisedStep": "When I enter username as \"Orlin\" and password \"Orlin\"",
+              "durationInMillis": 131
+            },
+            {
+              "step": "And I press Login",
+              "type": "SUCCESSFUL",
+              "parametrisedStep": "And I press Login",
+              "durationInMillis": 654
+            },
+            {
+              "step": "Then I should go to \"http://104.197.75.20/usuarios/loginAction\"",
+              "type": "SUCCESSFUL",
+              "parametrisedStep": "Then I should go to \"http://104.197.75.20/usuarios/loginAction\"",
+              "durationInMillis": 9
+            }
+          ]
+        },
+        "afterSteps": {
+          "matches": []
+        },
+        "storyAndScenarioMeta": {
+          "properties": []
+        },
+        "scenario": {
+          "title": "Login with a valid credentials",
+          "meta": {
+            "properties": []
+          },
+          "givenStories": {
+            "givenStories": [],
+            "givenStoriesAsString": "",
+            "examplesTable": {
+              "tableAsString": "",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [],
+              "data": [],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            }
+          },
+          "examplesTable": {
+            "tableAsString": "",
+            "headerSeparator": "|",
+            "valueSeparator": "|",
+            "ignorableSeparator": "|--",
+            "tableTransformers": {
+              "transformers": [
+                [
+                  "FORMATTING",
+                  {}
+                ],
+                [
+                  "REPLACING",
+                  {}
+                ],
+                [
+                  "FROM_LANDSCAPE",
+                  {}
+                ]
+              ]
+            },
+            "headers": [],
+            "data": [],
+            "properties": [
+              {
+                "@name": "headerSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "valueSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "ignorableSeparator",
+                "@value": "|--"
+              }
+            ],
+            "propertiesAsString": "",
+            "namedParameters": [],
+            "trim": true
+          },
+          "steps": [
+            "Given I go to \"http://104.197.75.20/usuarios/login\"",
+            "When I enter username as \"usuario\" and password \"usuario\"",
+            "And I press Login",
+            "Then I should go to \"http://104.197.75.20/usuarios/home\"",
+            "Then I go to \"http://104.197.75.20/usuarios/login\"",
+            "When I enter username as \"Orlin\" and password \"Orlin\"",
+            "And I press Login",
+            "Then I should go to \"http://104.197.75.20/usuarios/loginAction\""
+          ]
+        }
+      },
+      "examplePerformableScenarios": [],
+      "status": "SUCCESSFUL"
+    }
+  ]
+}}

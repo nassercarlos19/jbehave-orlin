@@ -1,0 +1,6 @@
+#org.jbehave.core.embedder.StoryManager
+#Wed Dec 21 11:03:35 CST 2016
+com/orlinortez/test/loguin_history.story=9000
+threads=1
+total=9000
+threadAverage=9000
