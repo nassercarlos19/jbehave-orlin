@@ -1,6 +1,5 @@
 package com.orlinortez.test;
 
-
 import org.jbehave.core.configuration.Configuration;
 import org.jbehave.core.configuration.MostUsefulConfiguration;
 
@@ -17,7 +16,6 @@ import org.jbehave.core.steps.CandidateSteps;
 import org.jbehave.core.steps.InstanceStepsFactory;
 import org.jbehave.web.selenium.LocalFrameContextView;
 import org.jbehave.web.selenium.SeleniumContext;
-//import com.orlinortez.steps.JBehave;
 import com.orlinortez.steps.TestSteps;
 import java.util.List;
 import org.jbehave.core.embedder.StoryControls;
@@ -31,9 +29,15 @@ import de.codecentric.jbehave.junit.monitoring.JUnitReportingRunner;
 import static org.jbehave.core.reporters.Format.CONSOLE;
 import static org.jbehave.web.selenium.WebDriverHtmlOutput.WEB_DRIVER_HTML;
 
-
 @RunWith(JUnitReportingRunner.class)
 public class LoguinHistory extends JUnitStories  {
+
+	@Override
+	public List candidateSteps() {
+		InstanceStepsFactory stepsFactory = new InstanceStepsFactory(
+				configuration(), new TestSteps());
+		return stepsFactory.createCandidateSteps();
+	}
 
 	public Configuration configuration() {
 		CrossReference crossReference = new CrossReference().withJsonOnly()
@@ -63,6 +67,14 @@ public class LoguinHistory extends JUnitStories  {
 		useConfiguration(configuration);
 		return configuration;
 	}
+
+	@Override
+	protected List<String> storyPaths() {
+		// TODO Auto-generated method stub
+		//return null;
+		URL searchInURL = codeLocationFromClass(this.getClass());
+		return new StoryFinder().findPaths(searchInURL, "**/*.story", "**/fail/*");
+	}
 	
 	/*@Override
 	public Configuration configuration() {
@@ -74,6 +86,7 @@ public class LoguinHistory extends JUnitStories  {
 						new StoryReporterBuilder().withDefaultFormats()
 								.withFormats(Format.CONSOLE, Format.TXT));
 	}
+
 	// Here we specify the steps classes
 	@Override
 	public List<CandidateSteps> candidateSteps() {
