@@ -15,8 +15,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.junit.Assert;
 
 import com.orlinortez.test.Step;
+import org.junit.runner.RunWith;
 
-
+//@RunWith(JBehave.class)
 public class TestSteps {
 
 	@Autowired

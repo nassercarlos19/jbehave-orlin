@@ -1,6 +1,7 @@
 package com.orlinortez.test;
 
 import org.jbehave.core.configuration.Configuration;
+import org.jbehave.core.configuration.MostUsefulConfiguration;
 
 import static org.jbehave.core.io.CodeLocations.codeLocationFromClass;
 
@@ -9,28 +10,33 @@ import org.jbehave.core.junit.JUnitStory;
 import org.jbehave.core.reporters.CrossReference;
 import org.jbehave.core.reporters.Format;
 import org.jbehave.core.reporters.StoryReporterBuilder;
+import org.jbehave.core.steps.CandidateSteps;
 import org.jbehave.core.steps.InstanceStepsFactory;
 import org.jbehave.web.selenium.LocalFrameContextView;
 import org.jbehave.web.selenium.SeleniumContext;
 
+//import com.orlinortez.steps.JBehave;
 import com.orlinortez.steps.TestSteps;
+
 import java.util.List;
 
 import org.jbehave.core.embedder.StoryControls;
 import org.jbehave.core.failures.FailingUponPendingStep;
-
 import org.jbehave.web.selenium.ContextView;
 import org.jbehave.web.selenium.SeleniumConfiguration;
 import org.jbehave.web.selenium.SeleniumContextOutput;
 import org.jbehave.web.selenium.SeleniumStepMonitor;
+import org.junit.runner.RunWith;
+
 import static org.jbehave.core.reporters.Format.CONSOLE;
 import static org.jbehave.web.selenium.WebDriverHtmlOutput.WEB_DRIVER_HTML;
 
 
 //@RunWith(JUnitReportingRunner.class)
+//@RunWith(JBehave.class)
 public class LoguinHistory extends JUnitStory {
 
-	@Override
+	/*@Override
 	public List candidateSteps() {
 		InstanceStepsFactory stepsFactory = new InstanceStepsFactory(
 				configuration(), new TestSteps());
@@ -64,5 +70,24 @@ public class LoguinHistory extends JUnitStory {
 				.useStoryReporterBuilder(reporterBuilder);
 		useConfiguration(configuration);
 		return configuration;
+	}*/
+	
+	@Override
+	public Configuration configuration() {
+		return new MostUsefulConfiguration()
+		// where to find the stories
+				.useStoryLoader(new LoadFromClasspath(this.getClass()))
+				// CONSOLE and TXT reporting
+				.useStoryReporterBuilder(
+						new StoryReporterBuilder().withDefaultFormats()
+								.withFormats(Format.CONSOLE, Format.TXT));
+	}
+
+	// Here we specify the steps classes
+	@Override
+	public List<CandidateSteps> candidateSteps() {
+		// varargs, can have more that one steps classes
+		return new InstanceStepsFactory(configuration(), new TestSteps())
+				.createCandidateSteps();
 	}
 }
