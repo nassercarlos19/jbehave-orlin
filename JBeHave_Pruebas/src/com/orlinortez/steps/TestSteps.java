@@ -14,7 +14,7 @@ import de.codecentric.jbehave.junit.monitoring.JUnitReportingRunner;
 import org.junit.runner.RunWith;
 
 
-@RunWith(JUnitReportingRunner.class)
+//@RunWith(JUnitReportingRunner.class)
 public class TestSteps {
 
 	@Autowired
