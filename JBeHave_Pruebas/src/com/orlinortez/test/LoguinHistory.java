@@ -1,5 +1,6 @@
 package com.orlinortez.test;
 
+
 import org.jbehave.core.configuration.Configuration;
 import org.jbehave.core.configuration.MostUsefulConfiguration;
 
@@ -16,16 +17,9 @@ import org.jbehave.core.steps.CandidateSteps;
 import org.jbehave.core.steps.InstanceStepsFactory;
 import org.jbehave.web.selenium.LocalFrameContextView;
 import org.jbehave.web.selenium.SeleniumContext;
-
-
-
-
-
 //import com.orlinortez.steps.JBehave;
 import com.orlinortez.steps.TestSteps;
-
 import java.util.List;
-
 import org.jbehave.core.embedder.StoryControls;
 import org.jbehave.core.failures.FailingUponPendingStep;
 import org.jbehave.web.selenium.ContextView;
@@ -33,8 +27,6 @@ import org.jbehave.web.selenium.SeleniumConfiguration;
 import org.jbehave.web.selenium.SeleniumContextOutput;
 import org.jbehave.web.selenium.SeleniumStepMonitor;
 import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
-
 import de.codecentric.jbehave.junit.monitoring.JUnitReportingRunner;
 import static org.jbehave.core.reporters.Format.CONSOLE;
 import static org.jbehave.web.selenium.WebDriverHtmlOutput.WEB_DRIVER_HTML;
@@ -98,7 +90,6 @@ public class LoguinHistory extends JUnitStories  {
 						new StoryReporterBuilder().withDefaultFormats()
 								.withFormats(Format.CONSOLE, Format.TXT));
 	}
-
 	// Here we specify the steps classes
 	@Override
 	public List<CandidateSteps> candidateSteps() {
