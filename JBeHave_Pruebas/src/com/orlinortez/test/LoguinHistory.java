@@ -31,17 +31,9 @@ import de.codecentric.jbehave.junit.monitoring.JUnitReportingRunner;
 import static org.jbehave.core.reporters.Format.CONSOLE;
 import static org.jbehave.web.selenium.WebDriverHtmlOutput.WEB_DRIVER_HTML;
 
-//@RunWithInEnviroment(eclipse=JUnit4.class, defaultRunner=Parameterized.class)
-@RunWith(JUnitReportingRunner.class)
-//@RunWith(JBehave.class)
-public class LoguinHistory extends JUnitStories  {
 
-	@Override
-	public List candidateSteps() {
-		InstanceStepsFactory stepsFactory = new InstanceStepsFactory(
-				configuration(), new TestSteps());
-		return stepsFactory.createCandidateSteps();
-	}
+@RunWith(JUnitReportingRunner.class)
+public class LoguinHistory extends JUnitStories  {
 
 	public Configuration configuration() {
 		CrossReference crossReference = new CrossReference().withJsonOnly()
@@ -70,14 +62,6 @@ public class LoguinHistory extends JUnitStories  {
 				.useStoryReporterBuilder(reporterBuilder);
 		useConfiguration(configuration);
 		return configuration;
-	}
-
-	@Override
-	protected List<String> storyPaths() {
-		// TODO Auto-generated method stub
-		//return null;
-		URL searchInURL = codeLocationFromClass(this.getClass());
-		return new StoryFinder().findPaths(searchInURL, "**/*.story", "**/fail/*");
 	}
 	
 	/*@Override
