@@ -4,8 +4,10 @@ import org.jbehave.core.configuration.Configuration;
 import org.jbehave.core.configuration.MostUsefulConfiguration;
 
 import static org.jbehave.core.io.CodeLocations.codeLocationFromClass;
-
+import java.net.URL;
 import org.jbehave.core.io.LoadFromClasspath;
+import org.jbehave.core.io.StoryFinder;
+import org.jbehave.core.junit.JUnitStories;
 import org.jbehave.core.junit.JUnitStory;
 import org.jbehave.core.reporters.CrossReference;
 import org.jbehave.core.reporters.Format;
@@ -14,6 +16,10 @@ import org.jbehave.core.steps.CandidateSteps;
 import org.jbehave.core.steps.InstanceStepsFactory;
 import org.jbehave.web.selenium.LocalFrameContextView;
 import org.jbehave.web.selenium.SeleniumContext;
+
+
+
+
 
 //import com.orlinortez.steps.JBehave;
 import com.orlinortez.steps.TestSteps;
@@ -27,14 +33,16 @@ import org.jbehave.web.selenium.SeleniumConfiguration;
 import org.jbehave.web.selenium.SeleniumContextOutput;
 import org.jbehave.web.selenium.SeleniumStepMonitor;
 import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
 
+import de.codecentric.jbehave.junit.monitoring.JUnitReportingRunner;
 import static org.jbehave.core.reporters.Format.CONSOLE;
 import static org.jbehave.web.selenium.WebDriverHtmlOutput.WEB_DRIVER_HTML;
 
-
+//@RunWithInEnviroment(eclipse=JUnit4.class, defaultRunner=Parameterized.class)
 @RunWith(JUnitReportingRunner.class)
 //@RunWith(JBehave.class)
-public class LoguinHistory extends JUnitStory {
+public class LoguinHistory extends JUnitStories  {
 
 	@Override
 	public List candidateSteps() {
@@ -70,6 +78,14 @@ public class LoguinHistory extends JUnitStory {
 				.useStoryReporterBuilder(reporterBuilder);
 		useConfiguration(configuration);
 		return configuration;
+	}
+
+	@Override
+	protected List<String> storyPaths() {
+		// TODO Auto-generated method stub
+		//return null;
+		URL searchInURL = codeLocationFromClass(this.getClass());
+		return new StoryFinder().findPaths(searchInURL, "**/*.story", "**/fail/*");
 	}
 	
 	/*@Override

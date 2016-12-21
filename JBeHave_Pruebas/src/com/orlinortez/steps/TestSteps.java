@@ -2,23 +2,19 @@ package com.orlinortez.steps;
 
 import java.io.File;
 import java.io.IOException;
-import com.orlinortez.test.Step;
 import org.jbehave.core.annotations.Given;
 import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.junit.Assert;
-
-import com.orlinortez.test.Step;
+import de.codecentric.jbehave.junit.monitoring.JUnitReportingRunner;
 import org.junit.runner.RunWith;
 
 
-@RunWith(JBehave.class)
+@RunWith(JUnitReportingRunner.class)
 public class TestSteps {
 
 	@Autowired
