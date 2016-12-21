@@ -43,11 +43,9 @@
 
 		<embeddables>**/LoguinHistory.java</embeddables>
 		<ignore.failure.in.stories>true</ignore.failure.in.stories>
-		<meta.filter></meta.filter>
 		<threads>2</threads>
 		<story.timeout.in.secs>350</story.timeout.in.secs>
 	</properties>
-
 	<dependencies>
 		<dependency>
 			<groupId>org.jbehave</groupId>
@@ -150,7 +148,11 @@
 			<version>19.0</version>
 		</dependency>
 
-
-
+		<!-- https://mvnrepository.com/artifact/de.codecentric/jbehave-junit-runner -->
+		<dependency>
+			<groupId>de.codecentric</groupId>
+			<artifactId>jbehave-junit-runner</artifactId>
+			<version>1.2.0</version>
+		</dependency>
 	</dependencies>
 </project>
