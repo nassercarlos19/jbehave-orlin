@@ -18,10 +18,7 @@ import org.jbehave.core.steps.CandidateSteps;
 import org.jbehave.core.steps.InstanceStepsFactory;
 import org.jbehave.web.selenium.LocalFrameContextView;
 import org.jbehave.web.selenium.SeleniumContext;
-
 import com.orlinortez.steps.TestSteps;
-import com.ruks.step.CalculatorStep;
-
 import java.util.List;
 
 import org.jbehave.core.embedder.StoryControls;
