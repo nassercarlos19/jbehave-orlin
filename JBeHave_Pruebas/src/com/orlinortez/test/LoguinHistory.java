@@ -68,13 +68,13 @@ public class LoguinHistory extends JUnitStories  {
 		return configuration;
 	}
 
-	@Override
-	protected List<String> storyPaths() {
+	//@Override
+	//protected List<String> storyPaths() {
 		// TODO Auto-generated method stub
 		//return null;
-		URL searchInURL = codeLocationFromClass(this.getClass());
-		return new StoryFinder().findPaths(searchInURL, "**/*.story", "**/fail/*");
-	}
+		//URL searchInURL = codeLocationFromClass(this.getClass());
+		//return new StoryFinder().findPaths(searchInURL, "**/*.story", "**/fail/*");
+	//}
 	
 	/*@Override
 	public Configuration configuration() {
